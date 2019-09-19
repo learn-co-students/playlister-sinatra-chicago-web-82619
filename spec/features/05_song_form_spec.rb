@@ -14,6 +14,7 @@ describe "Song Forms" do
     end
 
     context "without an existing artist" do
+      # binding.pry
       it "creates a new artist on submit" do
         expect {
           fill_in "Name", with: song_name
@@ -28,6 +29,7 @@ describe "Song Forms" do
         check "New Age Garbage"
         fill_in "Artist Name", with: artist_name
         click_on "Create"
+
 
         expect(page).to have_content(song_name)
         expect(page).to have_content(artist_name)
