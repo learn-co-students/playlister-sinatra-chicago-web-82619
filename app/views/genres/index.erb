@@ -1,1 +1,6 @@
-<h1>Genre Controller</h1>
+<h1>Genres:</h1>
+<ol>
+<% @genres.each do |genre| %>
+    <a href="#"><li><%= genre.name %></li></a>
+<% end %>
+</ol>
