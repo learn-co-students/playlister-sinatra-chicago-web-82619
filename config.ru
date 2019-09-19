@@ -1,4 +1,6 @@
 require './config/environment'
+require 'rack-flash'
+
 
 begin
   fi_check_migration
