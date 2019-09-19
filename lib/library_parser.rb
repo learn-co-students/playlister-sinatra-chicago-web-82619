@@ -33,7 +33,7 @@ class LibraryParser
     artist = Artist.find_or_create_by(name: artist_name)
 
     song.song_genres.build(genre: genre)
-    song.artist = artist
+    song.artist_id = artist.id
     
     song.save
   end
